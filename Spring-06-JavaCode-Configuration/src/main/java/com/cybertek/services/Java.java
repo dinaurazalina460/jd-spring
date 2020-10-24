@@ -1,12 +1,20 @@
 package com.cybertek.services;
 
 import com.cybertek.interfaces.Course;
-import org.springframework.stereotype.Component;
+import com.cybertek.interfaces.ExtraSessions;
 
-@Component
 public class Java implements Course {
+
+    private ExtraSessions extraSessions;
+
     @Override
     public void getTeachingHours() {
-        System.out.println("Weekly teaching hours : 30");
+        System.out.println("Weekly teaching hours : "+ (30 + extraSessions.getHours()));
     }
+
+    public Java(ExtraSessions extraSessions) {
+        this.extraSessions = extraSessions;
+    }
+
 }
+
