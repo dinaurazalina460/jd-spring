@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -13,6 +14,7 @@
         <module name="Spring-06-JavaCode-Configuration" />
         <module name="Spring-05-Value" />
         <module name="Spring-02-DI-ConstructorInjection" />
+        <module name="Spring-06-JavaCode-PostConstruct-PreDestroy" />
         <module name="Spring-05-JavaAnnotations-Qualifier" />
       </profile>
     </annotationProcessing>
@@ -25,6 +27,7 @@
       <module name="Spring-05-JavaAnnotations-Qualifier" target="1.8" />
       <module name="Spring-05-Value" target="1.8" />
       <module name="Spring-06-JavaCode-Configuration" target="1.8" />
+      <module name="Spring-06-JavaCode-PostConstruct-PreDestroy" target="1.8" />
       <module name="untitled" target="1.8" />
     </bytecodeTargetLevel>
   </component>
